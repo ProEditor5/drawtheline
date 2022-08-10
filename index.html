@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+	<title>Where do YOU draw the line?</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<link rel='stylesheet' href="styles.css">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+	<!--modified chartist stylesheet used-->
+	<link rel="stylesheet" href="/chartistjs/chartist.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+</head>
+<body id="body">
+	<div class="wheel">
+		<canvas class="wheel-canvas"></canvas>
+		<button class="submit text" onclick="submitColor()">Submit</button>
+	</div>
+
+	<p class="title text">Where do YOU draw the line?</p>
+	<p class="info1 info">1. Drag the slider between:<br><code class="task"></code></p>
+	<p class="info2 info">2. Press the <code>Submit</code> button</p>
+	<p class="info3 info">3. <code id="indicator">🔒</code> Scroll to view results</p>
+
+	<div class="results">
+		<div class="scroll-hint" onclick="toggleScroll()"><div class="scroll-hint-text text">=</div></div>
+		<div class="graph1">
+			<div class="graph1-graph "></div>
+			<p class="graph1-title text">% of each color on color wheel</p>
+		</div>
+		<div class="rankings">
+			<div class="rankings-top text">Largest Colors:</div>
+			<div class="rankings-bottom text">Smallest Colors:</div>
+		</div>
+		<div class="codes">
+			<p class="code-share text">Share your generated code with other people to compare results.<br><br>Your code:<br><code id="shareCode"></code></p>
+			<input type="text" class="code-in text" placeholder="Enter Code.."> 
+			<button class="code-submit text" onclick="addCompare()">Compare</button>
+		</div>
+	</div>
+
+	<script src="wheel.js"></script>
+	<script src="main.js"></script>
+</body>

@@ -8,7 +8,7 @@
 }
 body{
 	margin:0px; 
-	overflow: hidden;
+	overflow: clip;
 	background-color: var(--primaryClr);
 	-ms-overflow-style: none;
 	scrollbar-width: none;
@@ -37,7 +37,6 @@ body::-webkit-scrollbar {
 	font-size: 4rem;
 }
 .results{
-	overflow-y: hidden;
 	background-color: var(--secondaryClr);
 	position: absolute;
 	top:96vh; 
@@ -236,7 +235,6 @@ code{
 	.info2{ top: 50vh; }
 	.info3{ top: 65vh; }
 	.results{
-		overflow-y: hidden;
 		width:100vw;
 		height:190vh;
 	}
@@ -302,7 +300,6 @@ code{
 		font-size: 2.5vw; 
 	}
 	.results{
-		overflow-y: hidden;
 		height:240vh;
 	}
 	.codes{
